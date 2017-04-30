@@ -1,0 +1,8 @@
+include_recipe "../cookbooks/apt-get_update/apt-get_update.rb"
+include_recipe "../cookbooks/apt-get_upgrade/apt-get_upgrade.rb"
+include_recipe "../cookbooks/mkpasswd/mkpasswd.rb"
+include_recipe "../cookbooks/create_user/create_user.rb"
+include_recipe "../cookbooks/sshd/sshd.rb"
+include_recipe "../cookbooks/japanize/japanize.rb"
+include_recipe "../cookbooks/passwd_root/passwd_root.rb"
+include_recipe "../cookbooks/samba/samba.rb"

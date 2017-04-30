@@ -1,3 +1,8 @@
+cookbooks/secret/username_and_password.rb
+cookbooks/secret/root_password.rb
+cookbooks/secret/authorized_keys
+sabaku.sh
+
 *.gem
 *.rbc
 /.config

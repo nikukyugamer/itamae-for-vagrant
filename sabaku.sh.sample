@@ -1,0 +1,11 @@
+#!/bin/bash
+
+host='192.168.0.1'
+
+username='user_01'
+recipe='./roles/initialize.rb'
+sudo itamae ssh -h "$host" -u "$username" "$recipe" -l debug
+
+username='user_02'
+recipe='./roles/rbenv_environment.rb'
+sudo itamae ssh -h "$host" -u "$username" "$recipe" -l debug
