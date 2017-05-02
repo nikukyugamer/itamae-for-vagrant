@@ -1,5 +1,7 @@
 # What's this?
 [Itamae](http://itamae.kitchen/) codes for provisioning `rbenv` minimum environment
+- assumed on Vagrant environment
+    - sample Vagrantfile is [here](https://gist.github.com/corselia/60111eb1303717035f3c17ef3502bbb4)
 
 # How to use
 1. rewrite and rename below files as your environment
