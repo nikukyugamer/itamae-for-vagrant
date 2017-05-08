@@ -6,10 +6,17 @@
 # How to use
 1. rewrite and rename below files as your environment
 - `sabaku.sh.sample` to `sabaku.sh`
+    - `user_01` and `user_02` need to be changed
+        - `user_01` will be Vagrant default user
+        - `user_02` will be general user you wanna add
 - `cookbooks\secret\username_and_password.rb.sample` to `cookbooks\secret\username_and_password.rb`
+    - `USERNAME` is very above `user_02`
+    - `PASSWORD` is `USERNAME`'s password
 - `cookbooks\secret\root_password.rb.sample` to `cookbooks\secret\root_password.rb`
+    - `ROOT_PASSWORD` is root user's password
+    - note that root login with password is prohibited
 - `cookbooks\secret\authorized_keys.sample` to `authorized_keys.sample`
-
+    - you must prepare pair of public key and secret key
 2. add exec permission `sabaku.sh`
 3. exec `sabaku.sh` as below
 
@@ -20,14 +27,16 @@ $ ./sabaku.sh
 4. you need to input password three times
     - `sudo` password
     - first user's ssh password
+        - `first user` is Vagrant default user
     - second user's ssh password
-5. wait a minute
-6. provisioning is complete, it's ready!
+        - `second user` is general user you wanna add
+5. please wait a minute
+6. provisioning is complete, it's ready to use!
 
 # Notes
 - these recipes are useful **FOR ME** so you should modify them you like.
 - some recipes aren't used
-- I cannot use `git` such as below
+- I cannot use `git` such as below...why?
 
 ```ruby
 git "/usr/local/rbenv" do
