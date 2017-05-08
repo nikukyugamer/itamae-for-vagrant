@@ -55,6 +55,7 @@ stdout | fatal: Not a git repository (or any of the parent directories): .git
     - `adduser` command is recommended on Ubuntu 
     - but unwritable only one-linear with `adduser` command
     - so add `CREATE_HOME yes` in `login.defs` and used `useradd` command 
+- Itamae has Vagrant option as default...
 
 # Tips
 - `sabaku` of `sabaku.sh` is Japanese verb word `捌く(Sa-Ba-Ku)`, which means `to deal with foodstuff well`
